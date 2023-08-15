@@ -18,6 +18,8 @@
 		87940F142A8BD48F001312B1 /* petMinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87940F132A8BD48F001312B1 /* petMinderUITestsLaunchTests.swift */; };
 		87940F212A8BD602001312B1 /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87940F202A8BD602001312B1 /* PetDetailView.swift */; };
 		87940F232A8BD988001312B1 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87940F222A8BD988001312B1 /* AddPetView.swift */; };
+		87940F262A8BDF0E001312B1 /* petInfoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87940F242A8BDF0E001312B1 /* petInfoModel.xcdatamodeld */; };
+		87940F2A2A8BE6F5001312B1 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87940F292A8BE6F5001312B1 /* Pet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		87940F132A8BD48F001312B1 /* petMinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petMinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		87940F202A8BD602001312B1 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
 		87940F222A8BD988001312B1 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
+		87940F252A8BDF0E001312B1 /* petInfoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = petInfoModel.xcdatamodel; sourceTree = "<group>"; };
+		87940F292A8BE6F5001312B1 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +112,12 @@
 				87940EF42A8BD48F001312B1 /* Assets.xcassets */,
 				87940EF92A8BD48F001312B1 /* Persistence.swift */,
 				87940EFE2A8BD48F001312B1 /* Info.plist */,
+				87940F242A8BDF0E001312B1 /* petInfoModel.xcdatamodeld */,
 				87940EFB2A8BD48F001312B1 /* petMinder.xcdatamodeld */,
 				87940EF62A8BD48F001312B1 /* Preview Content */,
 				87940F202A8BD602001312B1 /* PetDetailView.swift */,
 				87940F222A8BD988001312B1 /* AddPetView.swift */,
+				87940F292A8BE6F5001312B1 /* Pet.swift */,
 			);
 			path = petMinder;
 			sourceTree = "<group>";
@@ -274,7 +280,9 @@
 				87940EFA2A8BD48F001312B1 /* Persistence.swift in Sources */,
 				87940F212A8BD602001312B1 /* PetDetailView.swift in Sources */,
 				87940EF32A8BD48E001312B1 /* ContentView.swift in Sources */,
+				87940F262A8BDF0E001312B1 /* petInfoModel.xcdatamodeld in Sources */,
 				87940EFD2A8BD48F001312B1 /* petMinder.xcdatamodeld in Sources */,
+				87940F2A2A8BE6F5001312B1 /* Pet.swift in Sources */,
 				87940F232A8BD988001312B1 /* AddPetView.swift in Sources */,
 				87940EF12A8BD48E001312B1 /* petMinderApp.swift in Sources */,
 			);
@@ -604,6 +612,16 @@
 			);
 			currentVersion = 87940EFC2A8BD48F001312B1 /* petMinder.xcdatamodel */;
 			path = petMinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		87940F242A8BDF0E001312B1 /* petInfoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				87940F252A8BDF0E001312B1 /* petInfoModel.xcdatamodel */,
+			);
+			currentVersion = 87940F252A8BDF0E001312B1 /* petInfoModel.xcdatamodel */;
+			path = petInfoModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

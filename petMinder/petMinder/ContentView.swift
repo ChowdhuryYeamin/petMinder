@@ -16,18 +16,19 @@ struct ContentView: View {
             VStack {
                 Text("Welcome to Pet Reminder") // Welcome Note
                 List {
-                    ForEach(pets.indices, id: \.self) { index in
-                        NavigationLink(destination: PetDetailView(pet: $pets[index])) {
-                            Text(pets[index].name)
+                    ForEach(pets, id: \.self) { pet in
+                        NavigationLink(destination: PetDetailView(pet: pet)) {
+                            Text(pet.name ?? "Unnamed Pet") // Provides a default value if the name is nil
                         }
                     }
+
                 }
                 HStack {
                     Button("Add Pet") {
                         showingAddPetModal = true
                     }
                     .sheet(isPresented: $showingAddPetModal) {
-                        AddPetView(pets: $pets)
+                        AddPetView()
                     }
                     Button("Delete Pet") {
                         // Add delete pet functionality if needed
@@ -38,6 +39,4 @@ struct ContentView: View {
     }
 }
 
-struct Pet {
-    var name: String
-}
+

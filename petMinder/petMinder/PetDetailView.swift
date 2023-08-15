@@ -6,21 +6,33 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct PetDetailView: View {
-    @Binding var pet: Pet // Notice the use of @Binding here
+    @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject var pet: Pet // Using ObservedObject to work with Core Data
 
     var body: some View {
-        Text("Meet \(pet.name)!")
-        // You can add more details here related to the pet.
+        VStack {
+            Text("Meet \(pet.name ?? "Unknown")!") // Handling optional unwrapping
+            Text("Age: \(pet.age ?? "N/A")")
+            Text("Notes: \(pet.notes ?? "N/A")")
+            // You can add more details here related to the pet.
+        }
     }
 }
 
 struct PetDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let samplePet = Pet(name: "Fido")
-        return PetDetailView(pet: .constant(samplePet)) // Using .constant for previewing with a binding
+        // Creating a preview with a sample Pet entity
+        let samplePet = Pet(context: PersistenceController.preview.container.viewContext)
+        samplePet.name = "Fido"
+        samplePet.age = "3"
+        samplePet.notes = "Friendly dog"
+
+        return PetDetailView(pet: samplePet)
     }
 }
+
 
 
