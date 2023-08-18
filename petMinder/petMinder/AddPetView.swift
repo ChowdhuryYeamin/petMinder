@@ -10,32 +10,41 @@ struct AddPetView: View {
     @State private var notes: String = ""
 
     var body: some View {
-        VStack {
-            TextField("Enter pet name", text: $name)
-                .padding()
-            TextField("Enter pet age", text: $age)
-                .padding()
-            TextField("Enter pet notes", text: $notes)
-                .padding()
+        NavigationView {
+            VStack {
+                TextField("Enter pet name", text: $name)
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(10)
+                TextField("Enter pet age", text: $age)
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(10)
+                TextField("Enter pet notes", text: $notes)
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(10)
 
-            Button("Add Pet") {
-                let newPet = Pet(context: viewContext)
-                newPet.name = name
-                newPet.age = age
-                newPet.notes = notes
-
-                do {
-                    try viewContext.save()
-                } catch {
-                    // Replace this implementation with code to handle the error appropriately.
-                    // fatalError() causes the application to generate a crash log and terminate.
-                    let nsError = error as NSError
-                    fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+                Button("Add Pet") {
+                    let newPet = Pet(context: viewContext)
+                    newPet.name = name
+                    newPet.age = age
+                    newPet.notes = notes
+                    // Saving logic
+                    presentationMode.wrappedValue.dismiss()
                 }
-
-                presentationMode.wrappedValue.dismiss()
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
             }
             .padding()
+            .navigationBarTitle("Add Pet", displayMode: .inline)
+            .navigationBarItems(leading:
+                Button("Back") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            )
         }
     }
 }
