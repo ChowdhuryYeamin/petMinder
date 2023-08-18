@@ -52,7 +52,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to Pet Reminder") // Welcome Note
+                Text("Welcome to Treats&Track") // Welcome Note
                 List {
                     ForEach(pets, id: \.self) { pet in
                         HStack {

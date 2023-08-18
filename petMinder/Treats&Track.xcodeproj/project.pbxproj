@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		874203C92A8D29A300E86707 /* petExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petExtension.swift; sourceTree = "<group>"; };
 		874203CE2A8D33AD00E86707 /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
-		87940EED2A8BD48E001312B1 /* petMinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petMinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87940EED2A8BD48E001312B1 /* Treats&Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Treats&Track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87940EF02A8BD48E001312B1 /* petMinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petMinderApp.swift; sourceTree = "<group>"; };
 		87940EF22A8BD48E001312B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87940EF42A8BD48F001312B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,9 +57,9 @@
 		87940EF92A8BD48F001312B1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		87940EFC2A8BD48F001312B1 /* petMinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = petMinder.xcdatamodel; sourceTree = "<group>"; };
 		87940EFE2A8BD48F001312B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87940F032A8BD48F001312B1 /* petMinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petMinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87940F032A8BD48F001312B1 /* Treats&TrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Treats&TrackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87940F072A8BD48F001312B1 /* petMinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petMinderTests.swift; sourceTree = "<group>"; };
-		87940F0D2A8BD48F001312B1 /* petMinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petMinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87940F0D2A8BD48F001312B1 /* Treats&TrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Treats&TrackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87940F112A8BD48F001312B1 /* petMinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petMinderUITests.swift; sourceTree = "<group>"; };
 		87940F132A8BD48F001312B1 /* petMinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petMinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		87940F202A8BD602001312B1 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
@@ -111,9 +111,9 @@
 		87940EEE2A8BD48E001312B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87940EED2A8BD48E001312B1 /* petMinder.app */,
-				87940F032A8BD48F001312B1 /* petMinderTests.xctest */,
-				87940F0D2A8BD48F001312B1 /* petMinderUITests.xctest */,
+				87940EED2A8BD48E001312B1 /* Treats&Track.app */,
+				87940F032A8BD48F001312B1 /* Treats&TrackTests.xctest */,
+				87940F0D2A8BD48F001312B1 /* Treats&TrackUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87940EEC2A8BD48E001312B1 /* petMinder */ = {
+		87940EEC2A8BD48E001312B1 /* Treats&Track */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87940F172A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "petMinder" */;
+			buildConfigurationList = 87940F172A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "Treats&Track" */;
 			buildPhases = (
 				87940EE92A8BD48E001312B1 /* Sources */,
 				87940EEA2A8BD48E001312B1 /* Frameworks */,
@@ -183,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = petMinder;
+			name = "Treats&Track";
 			productName = petMinder;
-			productReference = 87940EED2A8BD48E001312B1 /* petMinder.app */;
+			productReference = 87940EED2A8BD48E001312B1 /* Treats&Track.app */;
 			productType = "com.apple.product-type.application";
 		};
-		87940F022A8BD48F001312B1 /* petMinderTests */ = {
+		87940F022A8BD48F001312B1 /* Treats&TrackTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87940F1A2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "petMinderTests" */;
+			buildConfigurationList = 87940F1A2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "Treats&TrackTests" */;
 			buildPhases = (
 				87940EFF2A8BD48F001312B1 /* Sources */,
 				87940F002A8BD48F001312B1 /* Frameworks */,
@@ -201,14 +201,14 @@
 			dependencies = (
 				87940F052A8BD48F001312B1 /* PBXTargetDependency */,
 			);
-			name = petMinderTests;
+			name = "Treats&TrackTests";
 			productName = petMinderTests;
-			productReference = 87940F032A8BD48F001312B1 /* petMinderTests.xctest */;
+			productReference = 87940F032A8BD48F001312B1 /* Treats&TrackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		87940F0C2A8BD48F001312B1 /* petMinderUITests */ = {
+		87940F0C2A8BD48F001312B1 /* Treats&TrackUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87940F1D2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "petMinderUITests" */;
+			buildConfigurationList = 87940F1D2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "Treats&TrackUITests" */;
 			buildPhases = (
 				87940F092A8BD48F001312B1 /* Sources */,
 				87940F0A2A8BD48F001312B1 /* Frameworks */,
@@ -219,9 +219,9 @@
 			dependencies = (
 				87940F0F2A8BD48F001312B1 /* PBXTargetDependency */,
 			);
-			name = petMinderUITests;
+			name = "Treats&TrackUITests";
 			productName = petMinderUITests;
-			productReference = 87940F0D2A8BD48F001312B1 /* petMinderUITests.xctest */;
+			productReference = 87940F0D2A8BD48F001312B1 /* Treats&TrackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87940EE82A8BD48E001312B1 /* Build configuration list for PBXProject "petMinder" */;
+			buildConfigurationList = 87940EE82A8BD48E001312B1 /* Build configuration list for PBXProject "Treats&Track" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,9 +260,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87940EEC2A8BD48E001312B1 /* petMinder */,
-				87940F022A8BD48F001312B1 /* petMinderTests */,
-				87940F0C2A8BD48F001312B1 /* petMinderUITests */,
+				87940EEC2A8BD48E001312B1 /* Treats&Track */,
+				87940F022A8BD48F001312B1 /* Treats&TrackTests */,
+				87940F0C2A8BD48F001312B1 /* Treats&TrackUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,12 +338,12 @@
 /* Begin PBXTargetDependency section */
 		87940F052A8BD48F001312B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87940EEC2A8BD48E001312B1 /* petMinder */;
+			target = 87940EEC2A8BD48E001312B1 /* Treats&Track */;
 			targetProxy = 87940F042A8BD48F001312B1 /* PBXContainerItemProxy */;
 		};
 		87940F0F2A8BD48F001312B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87940EEC2A8BD48E001312B1 /* petMinder */;
+			target = 87940EEC2A8BD48E001312B1 /* Treats&Track */;
 			targetProxy = 87940F0E2A8BD48F001312B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -534,7 +534,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/petMinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/petMinder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Treats&Track.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Treats&Track";
 			};
 			name = Debug;
 		};
@@ -553,7 +553,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/petMinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/petMinder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Treats&Track.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Treats&Track";
 			};
 			name = Release;
 		};
@@ -594,7 +594,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87940EE82A8BD48E001312B1 /* Build configuration list for PBXProject "petMinder" */ = {
+		87940EE82A8BD48E001312B1 /* Build configuration list for PBXProject "Treats&Track" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87940F152A8BD48F001312B1 /* Debug */,
@@ -603,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87940F172A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "petMinder" */ = {
+		87940F172A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "Treats&Track" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87940F182A8BD48F001312B1 /* Debug */,
@@ -612,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87940F1A2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "petMinderTests" */ = {
+		87940F1A2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "Treats&TrackTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87940F1B2A8BD48F001312B1 /* Debug */,
@@ -621,7 +621,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87940F1D2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "petMinderUITests" */ = {
+		87940F1D2A8BD48F001312B1 /* Build configuration list for PBXNativeTarget "Treats&TrackUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87940F1E2A8BD48F001312B1 /* Debug */,
